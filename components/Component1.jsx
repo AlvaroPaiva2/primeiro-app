@@ -1,4 +1,5 @@
 import { View } from 'react-native';
+import Accordion from 'react-bootstrap/Accordion';
 
 export default function Component1() {
   return (
@@ -8,5 +9,3 @@ export default function Component1() {
     </View>
   );
 }
-
-

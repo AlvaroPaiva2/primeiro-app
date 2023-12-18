@@ -14,7 +14,7 @@ const Contador1 = () => {
 return (
   <View>
     <Button  onPress={() => incrementarAno()} title='Pressione para incrementar (+)' />
-    <Text style={{ textAlign: "center", fontSize: 50, }}>{ano}</Text>
+    <Text style={{ textAlign: 'center', fontSize: 40, }}>O ano atual é: <br></br>{ano}</Text>
     <Button  onPress={() => decrementarAno()} title='Pressione para decrementar (-)' />
   </View>
 );
