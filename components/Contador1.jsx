@@ -17,7 +17,7 @@ return (
     <Text style={{ textAlign: 'center', fontSize: 40, }}>O ano atual é: <br></br>{ano}</Text>
     <Button  onPress={() => decrementarAno()} title='Pressione para decrementar (-)' />
   </View>
-);
-}
+)
+};
 
 export default Contador1;

@@ -1,17 +1,21 @@
+import { NavigationContainer } from '@react-navigation/native';
 import { StyleSheet, View } from 'react-native';
-import Component1 from './components/Component1';
+import Home from './components/Home';
 import Component2 from './components/Component2';
-import Contador1 from './components/Contador1';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
-    <View style={styles.container}>
-    <Component1/>
-    <Contador1/>
-    <Component2/>
-    </View>
-  );
-}
+  <NavigationContainer> 
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="Component2" component={Component2} />
+      </Stack.Navigator>
+  </NavigationContainer>  
+  )
+};
 
 const styles = StyleSheet.create({
   container: {
